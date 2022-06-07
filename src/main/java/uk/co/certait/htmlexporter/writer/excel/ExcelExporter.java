@@ -72,6 +72,7 @@ public class ExcelExporter extends AbstractExporter {
 		workbook.write(out);
 		out.flush();
 		out.close();
+		workbook.close();
 	}
 
 	protected void formatSheet(Sheet sheet) {
