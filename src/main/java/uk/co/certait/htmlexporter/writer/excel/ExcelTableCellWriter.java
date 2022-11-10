@@ -58,9 +58,9 @@ public class ExcelTableCellWriter extends AbstractTableCellWriter {
 			} catch (ParseException pex) {
 				System.out.println("Invalid Usage");
 			}
-		} else if ((numericValue = getNumericValue(element)) != null) {
+		} /*else if ((numericValue = getNumericValue(element)) != null) {
 			cell.setCellValue(numericValue);
-		} else {
+		}*/ else {
 			cell = sheet.getRow(rowIndex).createCell(columnIndex, CellType.STRING);
 			cell.setCellValue(getElementText(element));
 		}
