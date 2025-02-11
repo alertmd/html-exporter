@@ -1,0 +1,17 @@
+apiVersion: backstage.io/v1alpha1
+kind: Component
+metadata:
+  name: html-exporter
+  description: Java Library to convert HTML/CSS to MS Excel and ODS Spreadhseets.
+  annotations:
+    business-unit: EverHealth
+    github.com/project-slug: alertmd/html-exporter
+spec:
+  type: service
+  lifecycle: production
+  owner: EverHealth
+  implementation:
+    languages:
+    - Java
+    - HTML
+    - CSS
